@@ -1,0 +1,149 @@
+1. method overloading is defined as method having same name and different parameter
+   
+ class Student{
+ public static void main (string[] args){ 
+ String name="pooja";
+ String subject="social";
+ int score=87;
+
+ static void (name)
+{
+ system.out.println("name is:"+name);
+}
+ 
+ static void (subject,score)
+{
+ System.out.println("subject is:"+subject);
+ System.out.println("score is:"+score);
+ }
+ }
+ 
+
+ 2.different kinds of variables are
+
+ *local variable: declared inside the class
+ class Place{
+ public static void main (String[] args){
+ String name;
+ name="banglore";
+ System.out.println("place:"+name);
+ }
+ }
+
+ *Instance varible: declared inside the class and outside the method
+
+
+
+  *Static Variable: declared using static keyword
+    
+    class Shop{
+    public static void main (String[] args){
+    static string shopName;
+    static shopName="bazaar";
+    System.out.println("shop name is:"+shopName);
+    }
+    }
+    
+
+3. Stack memory executes method
+   Heap memory can create classes ,allocate memory location,initialise values
+
+4. constructor overloading:
+   class Wood{
+   String name;
+   int price;
+   int weight;
+
+   Wood()
+   {
+   System.out.println("Invoking no arguments in wood");
+   }
+
+   Wood(String name)
+   {
+    System.out.println("Invoking name in wood");
+    this.name=name;
+   }
+  
+   Wood(String name,int price)
+   {
+   this(name);
+   System.out.println("Invoking name and price");
+   this.price=price;
+   }
+
+   Wood(String name,int price,int weight)
+   {
+   this(name,price);
+   System.out.println("Invoking name, price and weight");
+   this.weight=weight;
+   }
+
+   class WoodKiller{
+   public static void main (Srting[] args)
+   {
+   Wood ref=new Wood();
+   Wood ref1=new Wood("oak");
+   Wood ref2=new Wood("oak",300);
+   Wood ref3=new Wood("oak",300,90);
+   }
+   }
+
+
+7. constructor chaining using this keyword
+
+   class Watch{
+   String brand;
+   String name;
+    
+   Watch{
+   super()
+   System.out.println("invoking no arguments");
+   }
+
+   Watch(String brand)
+   {
+   super()
+   System.out.println("invoking brand in watch");
+   this.brand=brand;
+   }
+
+   Watch(String brand,String name)
+   {
+   this(brand);
+   System.out.println("invoking brand and name in watch");
+   this.name=name;
+   }
+   }
+
+   class WatchInfo{
+   public static void main (String[] args)
+   {
+   Watch ref=new watch();
+   Watch ref1=new watch("fastrack");
+   Watch ref2=new watch("fastrack","belted");
+   }
+   }
+
+
+6. class Bank{
+   static String name;
+   static String place;
+   
+   static void main(name,place);
+   {
+   System.out.println("name is:"+name);
+   System.out.println("place is:"+place);
+   }
+   }
+
+  class BankInfo{
+  public static void main (String[] args){
+  this.name("sbi");
+  this.place("mysore");
+  }
+  }
+
+
+
+  
